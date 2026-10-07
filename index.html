@@ -1,0 +1,3699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lira Palwo S.S. | SchoolsUganda</title>
+
+  <meta
+    name="description"
+    content="Lira Palwo Secondary School in Agago District, Uganda. Government-aided mixed day secondary school offering Ordinary Level education."
+  >
+
+  <meta
+    name="keywords"
+    content="Lira Palwo S.S, Lira Palwo Secondary School, Lira Palwo school, Agago schools, Uganda secondary schools, government aided schools Uganda"
+  >
+
+  <meta name="theme-color" content="#173f67">
+
+
+  <style>
+
+    :root {
+      --primary: #173f67;
+      --primary-dark: #0d2945;
+      --primary-light: #eaf2f9;
+
+      --gold: #d4a72c;
+      --gold-light: #fff7dc;
+      --gold-dark: #87670f;
+
+      --green: #1b7358;
+      --green-light: #eaf7f2;
+
+      --text: #22272b;
+      --muted: #687178;
+
+      --white: #ffffff;
+      --background: #f5f7f9;
+      --border: #dfe6ec;
+
+      --shadow:
+        0 18px 55px rgba(20, 50, 78, .10);
+
+      --radius: 18px;
+      --max-width: 1180px;
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 82px;
+    }
+
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    button {
+      font: inherit;
+    }
+
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+
+    /* =================================
+       TOP BAR
+    ================================= */
+
+    .topbar {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,.85);
+      font-size: .82rem;
+    }
+
+
+    .topbar-inner {
+      min-height: 38px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+
+    /* =================================
+       NAVIGATION
+    ================================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(14px);
+
+      border-bottom: 1px solid var(--border);
+    }
+
+
+    .nav-inner {
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+    }
+
+
+    .brand {
+      display: flex;
+      align-items: center;
+
+      gap: 11px;
+
+      color: var(--primary);
+
+      font-weight: 900;
+
+      white-space: nowrap;
+    }
+
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+
+      display: grid;
+      place-items: center;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          #27699d
+        );
+
+      border-radius: 13px;
+
+      box-shadow:
+        0 8px 22px
+        rgba(23,63,103,.20);
+
+      font-size: 1rem;
+    }
+
+
+    .brand small {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: .62rem;
+      font-weight: 650;
+
+      letter-spacing: .04em;
+    }
+
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      gap: 27px;
+
+      list-style: none;
+
+      font-size: .92rem;
+      font-weight: 700;
+    }
+
+
+    .nav-links a {
+      color: #47525b;
+
+      transition:
+        color .2s ease;
+    }
+
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+
+    .nav-cta {
+      color: white !important;
+
+      background: var(--primary);
+
+      padding: 10px 17px;
+
+      border-radius: 10px;
+    }
+
+
+    .menu-toggle {
+      display: none;
+
+      width: 44px;
+      height: 44px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 10px;
+
+      background: white;
+
+      color: var(--primary);
+
+      cursor: pointer;
+
+      font-size: 1.2rem;
+    }
+
+
+    /* =================================
+       HERO
+    ================================= */
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 675px;
+
+      display: flex;
+      align-items: center;
+
+      background:
+
+        radial-gradient(
+          circle at 87% 14%,
+          rgba(212,167,44,.20),
+          transparent 28%
+        ),
+
+        radial-gradient(
+          circle at 5% 88%,
+          rgba(23,63,103,.13),
+          transparent 30%
+        ),
+
+        linear-gradient(
+          135deg,
+          #f0f6fb 0%,
+          #ffffff 57%,
+          #fffaf0 100%
+        );
+    }
+
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 550px;
+      height: 550px;
+
+      right: -280px;
+      top: -250px;
+
+      border-radius: 50%;
+
+      border:
+        80px solid
+        rgba(23,63,103,.045);
+    }
+
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+
+      display: grid;
+
+      grid-template-columns:
+        1.15fr .85fr;
+
+      align-items: center;
+
+      gap: 70px;
+
+      padding: 90px 0;
+    }
+
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--primary);
+
+      background:
+        rgba(23,63,103,.08);
+
+      border:
+        1px solid
+        rgba(23,63,103,.13);
+
+      border-radius: 999px;
+
+      padding: 7px 13px;
+
+      margin-bottom: 20px;
+
+      font-size: .75rem;
+
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+      letter-spacing: .07em;
+    }
+
+
+    .hero h1 {
+      max-width: 820px;
+
+      margin-bottom: 23px;
+
+      color: #112f4e;
+
+      font-size:
+        clamp(2.8rem, 6vw, 5.2rem);
+
+      line-height: 1.02;
+
+      letter-spacing: -.055em;
+    }
+
+
+    .hero h1 span {
+      display: block;
+
+      color: var(--primary);
+    }
+
+
+    .hero-description {
+      max-width: 700px;
+
+      margin-bottom: 30px;
+
+      color: #5f6971;
+
+      font-size: 1.08rem;
+    }
+
+
+    .hero-buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+
+    .btn {
+      min-height: 48px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      padding: 0 20px;
+
+      border-radius: 11px;
+
+      border:
+        1px solid transparent;
+
+      font-weight: 850;
+
+      cursor: pointer;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+
+    .btn-primary {
+      color: white;
+
+      background: var(--primary);
+
+      box-shadow:
+        0 10px 24px
+        rgba(23,63,103,.20);
+    }
+
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+
+    .btn-secondary {
+      color: var(--primary);
+
+      background: white;
+
+      border-color: var(--border);
+    }
+
+
+    /* =================================
+       HERO CARD
+    ================================= */
+
+    .hero-card {
+      padding: 29px;
+
+      background:
+        rgba(255,255,255,.94);
+
+      border:
+        1px solid
+        rgba(255,255,255,.98);
+
+      border-radius: 26px;
+
+      box-shadow: var(--shadow);
+
+      backdrop-filter: blur(12px);
+    }
+
+
+    .hero-card-header {
+      display: flex;
+      align-items: center;
+
+      gap: 15px;
+
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+
+    .school-icon {
+      width: 58px;
+      height: 58px;
+
+      flex: 0 0 58px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 17px;
+
+      background: var(--primary);
+
+      color: white;
+
+      font-size: 1.45rem;
+    }
+
+
+    .hero-card h3 {
+      color: var(--primary-dark);
+
+      line-height: 1.25;
+    }
+
+
+    .hero-card small {
+      color: var(--muted);
+    }
+
+
+    .quick-facts {
+      display: grid;
+
+      gap: 14px;
+    }
+
+
+    .quick-fact {
+      display: grid;
+
+      grid-template-columns:
+        30px 1fr;
+
+      gap: 10px;
+    }
+
+
+    .quick-fact-icon {
+      color: var(--gold-dark);
+
+      font-weight: 900;
+    }
+
+
+    .quick-fact strong {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: .82rem;
+    }
+
+
+    .quick-fact span {
+      color: #38444d;
+
+      font-weight: 800;
+    }
+
+
+    /* =================================
+       SECTIONS
+    ================================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+
+    .section-heading {
+      max-width: 760px;
+
+      margin-bottom: 42px;
+    }
+
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+    }
+
+
+    .section-label {
+      margin-bottom: 9px;
+
+      color: var(--primary);
+
+      font-size: .75rem;
+
+      font-weight: 900;
+
+      letter-spacing: .11em;
+
+      text-transform: uppercase;
+    }
+
+
+    .section-heading h2 {
+      margin-bottom: 14px;
+
+      color: #163957;
+
+      font-size:
+        clamp(2rem, 4vw, 3rem);
+
+      line-height: 1.12;
+
+      letter-spacing: -.035em;
+    }
+
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+
+    /* =================================
+       FACTS
+    ================================= */
+
+    .facts-section {
+      background: white;
+    }
+
+
+    .facts-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 15px;
+    }
+
+
+    .fact-card {
+      padding: 25px;
+
+      background: #f8fbfd;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+    }
+
+
+    .fact-card .number {
+      margin-bottom: 7px;
+
+      color: var(--primary);
+
+      font-size: 1.45rem;
+
+      font-weight: 900;
+
+      line-height: 1.2;
+    }
+
+
+    .fact-card p {
+      color: var(--muted);
+
+      font-size: .87rem;
+    }
+
+
+    /* =================================
+       ABOUT
+    ================================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+
+    .about-copy p {
+      margin-bottom: 18px;
+
+      color: #606a71;
+    }
+
+
+    .verification-note {
+      margin-top: 25px;
+
+      padding: 18px 19px;
+
+      background: #fff9e9;
+
+      border-left:
+        4px solid var(--gold);
+
+      border-radius: 10px;
+
+      color: #69572b;
+
+      font-size: .88rem;
+    }
+
+
+    .identity-card {
+      padding: 33px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+
+      color: white;
+
+      border-radius: 25px;
+
+      box-shadow:
+        0 18px 45px
+        rgba(23,63,103,.18);
+    }
+
+
+    .identity-card h3 {
+      margin-bottom: 24px;
+
+      font-size: 1.35rem;
+    }
+
+
+    .identity-list {
+      display: grid;
+
+      gap: 15px;
+    }
+
+
+    .identity-item {
+      display: grid;
+
+      grid-template-columns:
+        145px 1fr;
+
+      gap: 15px;
+
+      padding-bottom: 15px;
+
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.15);
+    }
+
+
+    .identity-item:last-child {
+      border-bottom: none;
+
+      padding-bottom: 0;
+    }
+
+
+    .identity-item span:first-child {
+      color:
+        rgba(255,255,255,.65);
+
+      font-size: .82rem;
+    }
+
+
+    .identity-item span:last-child {
+      font-weight: 800;
+    }
+
+
+    /* =================================
+       ACADEMICS
+    ================================= */
+
+    .academics {
+      background: #eef4f9;
+    }
+
+
+    .academic-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .academic-card {
+      padding: 29px;
+
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+
+    .academic-card:hover {
+      transform: translateY(-4px);
+
+      box-shadow: var(--shadow);
+    }
+
+
+    .academic-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 19px;
+
+      background: var(--primary-light);
+
+      color: var(--primary);
+
+      border-radius: 14px;
+
+      font-size: 1.15rem;
+
+      font-weight: 900;
+    }
+
+
+    .academic-card h3 {
+      margin-bottom: 9px;
+
+      color: #193d5d;
+    }
+
+
+    .academic-card p {
+      color: var(--muted);
+
+      font-size: .92rem;
+    }
+
+
+    /* =================================
+       SCHOOL LIFE
+    ================================= */
+
+    .school-life {
+      background: white;
+    }
+
+
+    .life-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .life-card {
+      padding: 29px;
+
+      background: #f9fbfc;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+    }
+
+
+    .life-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 17px;
+
+      background: var(--green-light);
+
+      color: var(--green);
+
+      border-radius: 14px;
+
+      font-size: 1.3rem;
+    }
+
+
+    .life-card h3 {
+      margin-bottom: 8px;
+
+      color: #193d5d;
+    }
+
+
+    .life-card p {
+      color: var(--muted);
+
+      font-size: .91rem;
+    }
+
+
+    /* =================================
+       ICT
+    ================================= */
+
+    .ict-section {
+      background:
+        linear-gradient(
+          135deg,
+          #123451,
+          #1d557f
+        );
+
+      color: white;
+    }
+
+
+    .ict-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 50px;
+
+      align-items: center;
+    }
+
+
+    .ict-section .section-label {
+      color: #f0cf73;
+    }
+
+
+    .ict-section h2 {
+      color: white;
+    }
+
+
+    .ict-section p {
+      color:
+        rgba(255,255,255,.75);
+    }
+
+
+    .ict-stat {
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+
+      padding: 22px;
+
+      background:
+        rgba(255,255,255,.08);
+
+      border:
+        1px solid
+        rgba(255,255,255,.13);
+
+      border-radius: 17px;
+    }
+
+
+    .ict-number {
+      width: 70px;
+      height: 70px;
+
+      flex: 0 0 70px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--gold);
+
+      color: #533f0e;
+
+      border-radius: 17px;
+
+      font-size: 1.55rem;
+
+      font-weight: 950;
+    }
+
+
+    .ict-stat h3 {
+      margin-bottom: 4px;
+
+      color: white;
+    }
+
+
+    .ict-stat p {
+      margin: 0;
+
+      font-size: .84rem;
+    }
+
+
+    /* =================================
+       COMMUNITY
+    ================================= */
+
+    .community-section {
+      background: #f5f7f9;
+    }
+
+
+    .community-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .community-card {
+      padding: 29px;
+
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+    }
+
+
+    .community-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 17px;
+
+      background: var(--primary-light);
+
+      color: var(--primary);
+
+      border-radius: 14px;
+    }
+
+
+    .community-card h3 {
+      margin-bottom: 8px;
+
+      color: #193d5d;
+    }
+
+
+    .community-card p {
+      color: var(--muted);
+
+      font-size: .91rem;
+    }
+
+
+    /* =================================
+       HISTORY
+    ================================= */
+
+    .history-section {
+      background: white;
+    }
+
+
+    .history-card {
+      max-width: 950px;
+
+      margin: 0 auto;
+
+      padding: 38px;
+
+      background: #f8fbfd;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 24px;
+    }
+
+
+    .history-card h3 {
+      margin-bottom: 13px;
+
+      color: var(--primary-dark);
+    }
+
+
+    .history-card p {
+      margin-bottom: 15px;
+
+      color: var(--muted);
+    }
+
+
+    /* =================================
+       LOCATION
+    ================================= */
+
+    .location-section {
+      background: #eef4f9;
+    }
+
+
+    .location-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr .85fr;
+
+      gap: 45px;
+
+      align-items: center;
+    }
+
+
+    .location-details {
+      display: grid;
+
+      gap: 14px;
+
+      margin: 25px 0;
+    }
+
+
+    .location-detail {
+      display: flex;
+
+      gap: 12px;
+
+      align-items: flex-start;
+
+      color: #5f686f;
+    }
+
+
+    .location-detail strong {
+      display: block;
+
+      color: #193d5d;
+    }
+
+
+    .map-card {
+      min-height: 350px;
+
+      display: grid;
+
+      place-items: center;
+
+      padding: 30px;
+
+      text-align: center;
+
+      border-radius: 25px;
+
+      overflow: hidden;
+
+      background:
+
+        linear-gradient(
+          rgba(23,63,103,.95),
+          rgba(13,41,69,.98)
+        ),
+
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,255,255,.07) 0,
+          rgba(255,255,255,.07) 1px,
+          transparent 1px,
+          transparent 22px
+        );
+
+      box-shadow: var(--shadow);
+    }
+
+
+    .map-inner {
+      width: 100%;
+      max-width: 420px;
+    }
+
+
+    .map-pin {
+      width: 68px;
+      height: 68px;
+
+      display: grid;
+      place-items: center;
+
+      margin: 0 auto 20px;
+
+      background: var(--gold);
+
+      color: #5d430f;
+
+      border-radius: 50%;
+
+      font-size: 1.8rem;
+
+      box-shadow:
+        0 0 0 14px
+        rgba(212,167,44,.12);
+    }
+
+
+    .map-card h3 {
+      margin-bottom: 7px;
+
+      color: white;
+    }
+
+
+    .map-card p {
+      color:
+        rgba(255,255,255,.70);
+
+      font-size: .9rem;
+    }
+
+
+    /* =================================
+       CONTACT
+    ================================= */
+
+    .contact-section {
+      background: white;
+    }
+
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+
+    .contact-card {
+      padding: 28px;
+
+      background: #f9fbfc;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+    }
+
+
+    .contact-card .icon {
+      margin-bottom: 12px;
+
+      font-size: 1.5rem;
+    }
+
+
+    .contact-card h3 {
+      margin-bottom: 7px;
+
+      color: #193d5d;
+    }
+
+
+    .contact-card p {
+      color: var(--muted);
+
+      font-size: .91rem;
+    }
+
+
+    .contact-warning {
+      margin-top: 15px;
+
+      padding: 14px 16px;
+
+      background: #fff5e2;
+
+      border-radius: 10px;
+
+      color: #725a29;
+
+      font-size: .78rem;
+    }
+
+
+    /* =================================
+       SOURCES
+    ================================= */
+
+    .sources {
+      background: #f5f7f9;
+    }
+
+
+    .sources-list {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 12px;
+
+      list-style: none;
+    }
+
+
+    .source-item {
+      padding: 17px 18px;
+
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 12px;
+
+      color: var(--muted);
+
+      font-size: .86rem;
+    }
+
+
+    .source-item strong {
+      display: block;
+
+      margin-bottom: 4px;
+
+      color: var(--primary);
+    }
+
+
+    /* =================================
+       FOOTER
+    ================================= */
+
+    footer {
+      padding: 35px 0;
+
+      background: #0b253d;
+
+      color:
+        rgba(255,255,255,.70);
+    }
+
+
+    .footer-inner {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+
+    .footer-brand {
+      color: white;
+
+      font-weight: 900;
+    }
+
+
+    .footer-note {
+      max-width: 700px;
+
+      text-align: right;
+
+      font-size: .78rem;
+    }
+
+
+    /* =================================
+       BACK TO TOP
+    ================================= */
+
+    .back-top {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 45px;
+      height: 45px;
+
+      display: grid;
+      place-items: center;
+
+      border: none;
+
+      border-radius: 12px;
+
+      background: var(--primary);
+
+      color: white;
+
+      cursor: pointer;
+
+      opacity: 0;
+
+      pointer-events: none;
+
+      transform: translateY(12px);
+
+      transition: .25s ease;
+
+      box-shadow:
+        0 10px 24px
+        rgba(0,0,0,.18);
+
+      z-index: 900;
+    }
+
+
+    .back-top.visible {
+      opacity: 1;
+
+      pointer-events: auto;
+
+      transform: translateY(0);
+    }
+
+
+    /* =================================
+       RESPONSIVE
+    ================================= */
+
+    @media (max-width: 980px) {
+
+      .nav-links {
+        position: absolute;
+
+        left: 4%;
+        right: 4%;
+
+        top: 70px;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 16px;
+
+        background: white;
+
+        border:
+          1px solid var(--border);
+
+        border-radius: 14px;
+
+        box-shadow: var(--shadow);
+      }
+
+
+      .nav-links.open {
+        display: flex;
+      }
+
+
+      .nav-links a {
+        display: block;
+
+        padding: 11px 8px;
+      }
+
+
+      .menu-toggle {
+        display: block;
+      }
+
+
+      .hero-grid,
+      .about-grid,
+      .ict-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .hero-grid {
+        padding: 70px 0;
+      }
+
+
+      .hero-card {
+        max-width: 650px;
+      }
+
+
+      .facts-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .academic-grid,
+      .life-grid,
+      .community-grid,
+      .contact-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 680px) {
+
+      .topbar-inner {
+        justify-content: center;
+
+        text-align: center;
+      }
+
+
+      .topbar-inner span:last-child {
+        display: none;
+      }
+
+
+      .brand small {
+        display: none;
+      }
+
+
+      section {
+        padding: 65px 0;
+      }
+
+
+      .hero-grid {
+        padding: 55px 0 65px;
+      }
+
+
+      .hero h1 {
+        font-size:
+          clamp(2.35rem, 12vw, 3.5rem);
+      }
+
+
+      .hero-description {
+        font-size: 1rem;
+      }
+
+
+      .facts-grid,
+      .academic-grid,
+      .life-grid,
+      .community-grid,
+      .contact-grid,
+      .sources-list {
+        grid-template-columns: 1fr;
+      }
+
+
+      .identity-item {
+        grid-template-columns: 1fr;
+
+        gap: 2px;
+      }
+
+
+      .footer-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+
+      .footer-note {
+        text-align: left;
+      }
+
+
+      .map-card {
+        min-height: 300px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =================================
+       TOP BAR
+  ================================= -->
+
+  <div class="topbar">
+
+    <div class="container topbar-inner">
+
+      <span>
+        🇺🇬 SchoolsUganda · Agago District
+      </span>
+
+      <span>
+        Research-based school profile
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =================================
+       NAVIGATION
+  ================================= -->
+
+  <header class="navbar">
+
+    <div class="container nav-inner">
+
+
+      <a
+        href="#home"
+        class="brand"
+      >
+
+        <div class="brand-mark">
+          LP
+        </div>
+
+        <div>
+
+          SchoolsUganda
+
+          <small>
+            Uganda School Directory
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+      <nav>
+
+        <ul
+          class="nav-links"
+          id="navLinks"
+        >
+
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#academics">
+              Academics
+            </a>
+          </li>
+
+          <li>
+            <a href="#school-life">
+              School Life
+            </a>
+          </li>
+
+          <li>
+            <a href="#location">
+              Location
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              class="nav-cta"
+            >
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =================================
+         HERO
+    ================================= -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="container hero-grid">
+
+
+        <div>
+
+          <div class="eyebrow">
+            ✓ Government-Aided · Mixed Day
+          </div>
+
+
+          <h1>
+
+            Lira Palwo
+            <span>Secondary School</span>
+
+          </h1>
+
+
+          <p class="hero-description">
+
+            Lira Palwo S.S. is a government-aided,
+            mixed day secondary school in Agago District,
+            Northern Uganda.
+
+            Uganda's Ministry of Education and Sports lists
+            the school at Ordinary Level.
+
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="#about"
+              class="btn btn-primary"
+            >
+              Explore School
+            </a>
+
+
+            <a
+              href="#location"
+              class="btn btn-secondary"
+            >
+              View Location
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <aside class="hero-card">
+
+
+          <div class="hero-card-header">
+
+            <div class="school-icon">
+              🎓
+            </div>
+
+
+            <div>
+
+              <h3>
+                Lira Palwo S.S.
+              </h3>
+
+              <small>
+                Lira Palwo · Agago · Uganda
+              </small>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="quick-facts">
+
+
+            <div class="quick-fact">
+
+              <div class="quick-fact-icon">
+                ◉
+              </div>
+
+              <div>
+
+                <strong>
+                  School Category
+                </strong>
+
+                <span>
+                  Mixed / Day
+                </span>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="quick-fact">
+
+              <div class="quick-fact-icon">
+                ◎
+              </div>
+
+              <div>
+
+                <strong>
+                  Education Level
+                </strong>
+
+                <span>
+                  O-Level
+                </span>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="quick-fact">
+
+              <div class="quick-fact-icon">
+                #
+              </div>
+
+              <div>
+
+                <strong>
+                  EMIS Code
+                </strong>
+
+                <span>
+                  4221
+                </span>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="quick-fact">
+
+              <div class="quick-fact-icon">
+                #
+              </div>
+
+              <div>
+
+                <strong>
+                  Placement Code
+                </strong>
+
+                <span>
+                  2404
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         FACTS
+    ================================= -->
+
+    <section class="facts-section">
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            At a glance
+          </div>
+
+          <h2>
+            Lira Palwo S.S. by the numbers
+          </h2>
+
+          <p>
+
+            Key identifiers and classifications confirmed
+            through Uganda government education records.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="facts-grid">
+
+
+          <div class="fact-card">
+
+            <div class="number">
+              4221
+            </div>
+
+            <p>
+              EMIS code associated with Lira Palwo S.S.
+              in Uganda government school records.
+            </p>
+
+          </div>
+
+
+
+          <div class="fact-card">
+
+            <div class="number">
+              2404
+            </div>
+
+            <p>
+              Ministry placement code assigned to
+              Lira Palwo S.S.
+            </p>
+
+          </div>
+
+
+
+          <div class="fact-card">
+
+            <div class="number">
+              O
+            </div>
+
+            <p>
+              The Ministry's 2025 placement guide lists
+              the school at Ordinary Level.
+            </p>
+
+          </div>
+
+
+
+          <div class="fact-card">
+
+            <div class="number">
+              DAY
+            </div>
+
+            <p>
+              The Ministry classifies the institution as
+              Mixed/Day.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         ABOUT
+    ================================= -->
+
+    <section id="about">
+
+      <div class="container about-grid">
+
+
+        <div class="about-copy">
+
+          <div class="section-heading">
+
+            <div class="section-label">
+              About the school
+            </div>
+
+            <h2>
+              A government-aided school serving Lira Palwo
+            </h2>
+
+
+            <p>
+
+              <strong>Lira Palwo S.S.</strong> is listed
+              among Uganda's government-aided secondary
+              schools serving Agago District.
+
+            </p>
+
+
+            <p>
+
+              The Uganda Ministry of Education and Sports'
+              2025 Post-Primary Selection Information Guide
+              gives Lira Palwo S.S. placement code
+              <strong>2404</strong>.
+
+            </p>
+
+
+            <p>
+
+              The same Ministry guide classifies the school
+              as <strong>O-Level</strong> and
+              <strong>Mixed/Day</strong>.
+
+            </p>
+
+
+            <p>
+
+              Government education records identify the
+              school with EMIS code
+              <strong>4221</strong>.
+
+            </p>
+
+
+            <p>
+
+              The school is associated with
+              <strong>Lira Palwo</strong> in Agago District,
+              Northern Uganda.
+
+            </p>
+
+
+          </div>
+
+
+          <div class="verification-note">
+
+            <strong>
+              Accuracy note:
+            </strong>
+
+            This profile deliberately avoids claiming
+            current enrolment, fees, examination rankings,
+            staff numbers or facilities unless those details
+            are supported by sufficiently reliable sources.
+
+          </div>
+
+        </div>
+
+
+
+        <div class="identity-card">
+
+          <h3>
+            School identity
+          </h3>
+
+
+          <div class="identity-list">
+
+
+            <div class="identity-item">
+
+              <span>
+                Official listing
+              </span>
+
+              <span>
+                LIRA PALWO S.S.
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                Common name
+              </span>
+
+              <span>
+                Lira Palwo Secondary School
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                EMIS Code
+              </span>
+
+              <span>
+                4221
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                Placement Code
+              </span>
+
+              <span>
+                2404
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                Ownership
+              </span>
+
+              <span>
+                Government-Aided
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                Category
+              </span>
+
+              <span>
+                Mixed / Day
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                Education Level
+              </span>
+
+              <span>
+                O-Level
+              </span>
+
+            </div>
+
+
+            <div class="identity-item">
+
+              <span>
+                District
+              </span>
+
+              <span>
+                Agago
+              </span>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         ACADEMICS
+    ================================= -->
+
+    <section
+      class="academics"
+      id="academics"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Academics
+          </div>
+
+          <h2>
+            Ordinary Level secondary education
+          </h2>
+
+          <p>
+
+            Uganda's Ministry of Education and Sports
+            identifies Lira Palwo S.S. as an O-Level,
+            Mixed/Day secondary school.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="academic-grid">
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              O
+            </div>
+
+            <h3>
+              Ordinary Level
+            </h3>
+
+            <p>
+
+              Lira Palwo S.S. is officially listed at
+              Ordinary Level in the Ministry's current
+              placement information.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              📚
+            </div>
+
+            <h3>
+              Secondary Curriculum
+            </h3>
+
+            <p>
+
+              The school operates within Uganda's national
+              secondary education framework at the
+              Ordinary Level.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              📝
+            </div>
+
+            <h3>
+              National Assessment
+            </h3>
+
+            <p>
+
+              As a Ugandan secondary school, learners are
+              educated within the national assessment
+              framework applicable to their level.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              🧑‍🏫
+            </div>
+
+            <h3>
+              Government Education
+            </h3>
+
+            <p>
+
+              The institution forms part of Uganda's
+              government-aided secondary-school network.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              📐
+            </div>
+
+            <h3>
+              Core Learning
+            </h3>
+
+            <p>
+
+              Learners study through Uganda's approved
+              secondary-school curriculum, including the
+              subjects required at O-Level.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="academic-card">
+
+            <div class="academic-icon">
+              🎓
+            </div>
+
+            <h3>
+              Further Education
+            </h3>
+
+            <p>
+
+              Completion of O-Level can provide a pathway
+              to Advanced Level studies or other
+              post-secondary education and training.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         SCHOOL LIFE
+    ================================= -->
+
+    <section
+      class="school-life"
+      id="school-life"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            School life
+          </div>
+
+          <h2>
+            A mixed day-school environment
+          </h2>
+
+          <p>
+
+            The Ministry confirms the school's Mixed/Day
+            classification. More detailed current
+            information about clubs, sports and facilities
+            is not sufficiently documented in authoritative
+            public sources.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="life-grid">
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              👨‍🎓
+            </div>
+
+            <h3>
+              Mixed School
+            </h3>
+
+            <p>
+
+              Lira Palwo S.S. is classified as a mixed
+              school, serving both male and female learners.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              🏫
+            </div>
+
+            <h3>
+              Day School
+            </h3>
+
+            <p>
+
+              The Ministry identifies the school as a
+              day school rather than a boarding school.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              🌍
+            </div>
+
+            <h3>
+              Local Community
+            </h3>
+
+            <p>
+
+              The school contributes to secondary education
+              provision within Lira Palwo and the wider
+              Agago community.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              📖
+            </div>
+
+            <h3>
+              O-Level Learning
+            </h3>
+
+            <p>
+
+              The current Ministry placement guide lists
+              Ordinary Level as the school's education level.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              🏛️
+            </div>
+
+            <h3>
+              Public Education Network
+            </h3>
+
+            <p>
+
+              Lira Palwo S.S. appears in Uganda's official
+              government secondary-school records.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="life-card">
+
+            <div class="life-icon">
+              🇺🇬
+            </div>
+
+            <h3>
+              Uganda Education System
+            </h3>
+
+            <p>
+
+              The school operates within Uganda's national
+              secondary education system.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         ICT
+    ================================= -->
+
+    <section class="ict-section">
+
+      <div class="container ict-grid">
+
+
+        <div>
+
+          <div class="section-heading">
+
+            <div class="section-label">
+              ICT development
+            </div>
+
+            <h2>
+              Documented investment in school ICT
+            </h2>
+
+            <p>
+
+              A Uganda Communications Commission school
+              ICT-project database records an ICT laboratory
+              project at Lira Palwo S.S.
+
+            </p>
+
+            <p style="margin-top:15px;">
+
+              The documented project recorded
+              <strong>11 computers</strong> and
+              <strong>solar power</strong>.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="ict-stat">
+
+          <div class="ict-number">
+            11
+          </div>
+
+          <div>
+
+            <h3>
+              Computers
+            </h3>
+
+            <p>
+              Number recorded for the documented ICT
+              project at Lira Palwo S.S.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         COMMUNITY
+    ================================= -->
+
+    <section class="community-section">
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Community &amp; location
+          </div>
+
+          <h2>
+            Serving Lira Palwo in Agago District
+          </h2>
+
+          <p>
+
+            Lira Palwo S.S. is part of the secondary-school
+            network serving communities in Agago District,
+            Northern Uganda.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="community-grid">
+
+
+          <article class="community-card">
+
+            <div class="community-icon">
+              📍
+            </div>
+
+            <h3>
+              Lira Palwo
+            </h3>
+
+            <p>
+
+              The school is associated with Lira Palwo,
+              the locality from which its name is derived.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="community-card">
+
+            <div class="community-icon">
+              🗺️
+            </div>
+
+            <h3>
+              Agago District
+            </h3>
+
+            <p>
+
+              Current Ministry records classify the school
+              under Agago District.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="community-card">
+
+            <div class="community-icon">
+              🇺🇬
+            </div>
+
+            <h3>
+              Northern Uganda
+            </h3>
+
+            <p>
+
+              Agago District is part of Northern Uganda and
+              the Acholi sub-region.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         RECORD HISTORY
+    ================================= -->
+
+    <section class="history-section">
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Records &amp; administration
+          </div>
+
+          <h2>
+            Lira Palwo S.S. in Uganda's education records
+          </h2>
+
+          <p>
+
+            Historical records explain why some older
+            documents may display Pader or Kitgum while
+            current Ministry records use Agago.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="history-card">
+
+
+          <h3>
+            Historical district references
+          </h3>
+
+
+          <p>
+
+            Older Ministry placement documents list
+            Lira Palwo S.S. under <strong>Pader</strong>,
+            while the current 2025 Ministry guide lists
+            it under <strong>Agago District</strong>.
+
+          </p>
+
+
+          <p>
+
+            The 2025 Ministry guide gives the school as
+            <strong>P.O. Patongo, Kitgum</strong>. This
+            postal reference should not be interpreted as
+            meaning that the school is currently located
+            in Kitgum District.
+
+          </p>
+
+
+          <p>
+
+            Government EMIS-era records identify Lira Palwo
+            S.S. under Agago District and give it
+            institution code <strong>4221</strong>.
+
+          </p>
+
+
+          <div class="verification-note">
+
+            <strong>
+              Important:
+            </strong>
+
+            District and postal references can differ in
+            Ugandan education records because administrative
+            boundaries and postal arrangements do not always
+            use the same names. This page uses
+            <strong>Agago District</strong> as the current
+            Ministry district classification.
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         LOCATION
+    ================================= -->
+
+    <section
+      class="location-section"
+      id="location"
+    >
+
+      <div class="container location-grid">
+
+
+        <div>
+
+          <div class="section-heading">
+
+            <div class="section-label">
+              Location
+            </div>
+
+            <h2>
+              Lira Palwo, Agago District
+            </h2>
+
+            <p>
+
+              Public mapping data places Lira Palwo Senior
+              Secondary School in the Lira Palwo area of
+              Agago County, Agago District, Northern Uganda.
+
+            </p>
+
+          </div>
+
+
+          <div class="location-details">
+
+
+            <div class="location-detail">
+
+              <span>
+                📍
+              </span>
+
+              <div>
+
+                <strong>
+                  Locality
+                </strong>
+
+                Lira Palwo
+
+              </div>
+
+            </div>
+
+
+
+            <div class="location-detail">
+
+              <span>
+                🗺️
+              </span>
+
+              <div>
+
+                <strong>
+                  District
+                </strong>
+
+                Agago District
+
+              </div>
+
+            </div>
+
+
+
+            <div class="location-detail">
+
+              <span>
+                🌍
+              </span>
+
+              <div>
+
+                <strong>
+                  Region
+                </strong>
+
+                Northern Uganda
+
+              </div>
+
+            </div>
+
+
+
+            <div class="location-detail">
+
+              <span>
+                ✉
+              </span>
+
+              <div>
+
+                <strong>
+                  Ministry Postal Listing
+                </strong>
+
+                P.O. Patongo, Kitgum
+
+              </div>
+
+            </div>
+
+
+
+            <div class="location-detail">
+
+              <span>
+                #
+              </span>
+
+              <div>
+
+                <strong>
+                  EMIS
+                </strong>
+
+                4221
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="map-card">
+
+          <div class="map-inner">
+
+            <div class="map-pin">
+              📍
+            </div>
+
+            <h3>
+              Lira Palwo Secondary School
+            </h3>
+
+            <p>
+              Lira Palwo · Agago District · Uganda
+            </p>
+
+            <p style="margin-top:16px;">
+
+              Public mapping data places the school near
+              Lira Palwo Primary School and Lira Palwo
+              Health Centre II.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         CONTACT
+    ================================= -->
+
+    <section
+      class="contact-section"
+      id="contact"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Contact
+          </div>
+
+          <h2>
+            Lira Palwo S.S. contact information
+          </h2>
+
+          <p>
+
+            Public sources provide a postal locality and
+            historical telephone information, but current
+            direct contact details should be confirmed before
+            publication as official current contacts.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="contact-grid">
+
+
+          <article class="contact-card">
+
+            <div class="icon">
+              ✉️
+            </div>
+
+            <h3>
+              Postal Information
+            </h3>
+
+            <p>
+
+              P.O. Patongo<br>
+              Kitgum, Uganda
+
+            </p>
+
+
+            <div class="contact-warning">
+
+              This is the postal reference appearing in the
+              Ministry's 2025 placement guide.
+
+            </div>
+
+          </article>
+
+
+
+          <article class="contact-card">
+
+            <div class="icon">
+              📞
+            </div>
+
+            <h3>
+              Telephone
+            </h3>
+
+            <p>
+
+              <strong>
+                +256 392 881103
+              </strong>
+
+            </p>
+
+
+            <div class="contact-warning">
+
+              This number appears in a public Agago school
+              directory. Confirm that it remains active
+              before using it as the school's current
+              telephone contact.
+
+            </div>
+
+          </article>
+
+
+
+          <article class="contact-card">
+
+            <div class="icon">
+              🏫
+            </div>
+
+            <h3>
+              School Location
+            </h3>
+
+            <p>
+
+              Lira Palwo<br>
+              Agago District<br>
+              Northern Uganda
+
+            </p>
+
+
+            <div class="contact-warning">
+
+              No verified current official school website
+              or official school email address was found
+              during this research.
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         SOURCES
+    ================================= -->
+
+    <section class="sources">
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Research &amp; verification
+          </div>
+
+          <h2>
+            Sources behind this profile
+          </h2>
+
+          <p>
+
+            Government sources were prioritized for the
+            school's identity, EMIS code, district,
+            placement code and classification.
+
+          </p>
+
+        </div>
+
+
+
+        <ul class="sources-list">
+
+
+          <li class="source-item">
+
+            <strong>
+              Uganda Ministry of Education &amp; Sports
+            </strong>
+
+            The 2025 P7 Information Guide lists
+            Lira Palwo S.S. as placement code 2404,
+            O-Level, Mixed/Day and Agago District.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Uganda Education Management Information System
+            </strong>
+
+            Ministry education records identify
+            Lira Palwo S.S. with institution/EMIS code
+            4221.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Ministry Secondary School Records
+            </strong>
+
+            Government secondary-school records list
+            Lira Palwo S.S. under Agago District with
+            code 4221.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Uganda Communications Commission
+            </strong>
+
+            The UCC ICT-lab database records an ICT
+            project at Lira Palwo S.S. with 11 computers
+            and solar power.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Education Service Commission
+            </strong>
+
+            ESC records identify Lira Palwo S.S. as a
+            school in Agago District and contain historical
+            staff/administrative references.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Public School Directory
+            </strong>
+
+            A public Agago secondary-school directory lists
+            Lira Palwo Secondary School and the telephone
+            number +256 392 881103.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Public Mapping Data
+            </strong>
+
+            Open mapping information places Lira Palwo
+            Senior Secondary School in the Lira Palwo area
+            of Agago District.
+
+          </li>
+
+
+
+          <li class="source-item">
+
+            <strong>
+              Accuracy Policy
+            </strong>
+
+            Current enrolment, fees, examination scores,
+            staff totals and detailed facilities have not
+            been presented as current facts without
+            adequate authoritative evidence.
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+
+      <div>
+
+        <div class="footer-brand">
+          SchoolsUganda
+        </div>
+
+        <div
+          style="
+            font-size:.78rem;
+            margin-top:3px;
+          "
+        >
+          Discover Uganda's schools.
+        </div>
+
+      </div>
+
+
+      <div class="footer-note">
+
+        Lira Palwo S.S. profile ·
+        Information researched from Uganda government
+        education records and supporting public sources.
+
+        Current admissions, fees, contacts and facilities
+        should be confirmed directly with the school.
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =================================
+       BACK TO TOP
+  ================================= -->
+
+  <button
+    class="back-top"
+    id="backTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+
+
+  <!-- =================================
+       JAVASCRIPT
+  ================================= -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+
+        const menuToggle =
+          document.getElementById(
+            "menuToggle"
+          );
+
+
+        const navLinks =
+          document.getElementById(
+            "navLinks"
+          );
+
+
+        const backTop =
+          document.getElementById(
+            "backTop"
+          );
+
+
+
+        /* ==============================
+           MOBILE MENU
+        ============================== */
+
+        menuToggle.addEventListener(
+          "click",
+          function () {
+
+            const isOpen =
+              navLinks.classList.toggle(
+                "open"
+              );
+
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              isOpen
+                ? "true"
+                : "false"
+            );
+
+
+            menuToggle.textContent =
+              isOpen
+                ? "✕"
+                : "☰";
+
+          }
+        );
+
+
+
+        /* ==============================
+           CLOSE MOBILE MENU
+        ============================== */
+
+        document
+          .querySelectorAll(
+            "#navLinks a"
+          )
+          .forEach(
+            function (link) {
+
+              link.addEventListener(
+                "click",
+                function () {
+
+                  navLinks.classList.remove(
+                    "open"
+                  );
+
+
+                  menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                  );
+
+
+                  menuToggle.textContent =
+                    "☰";
+
+                }
+              );
+
+            }
+          );
+
+
+
+        /* ==============================
+           BACK TO TOP
+        ============================== */
+
+        window.addEventListener(
+          "scroll",
+          function () {
+
+            if (
+              window.scrollY > 500
+            ) {
+
+              backTop.classList.add(
+                "visible"
+              );
+
+            } else {
+
+              backTop.classList.remove(
+                "visible"
+              );
+
+            }
+
+          }
+        );
+
+
+        backTop.addEventListener(
+          "click",
+          function () {
+
+            window.scrollTo({
+
+              top: 0,
+
+              behavior: "smooth"
+
+            });
+
+          }
+        );
+
+
+
+        /* ==============================
+           ACTIVE NAVIGATION
+        ============================== */
+
+        const sections =
+          document.querySelectorAll(
+            "main section[id]"
+          );
+
+
+        const navigationLinks =
+          document.querySelectorAll(
+            "#navLinks a"
+          );
+
+
+        const observer =
+          new IntersectionObserver(
+
+            function (entries) {
+
+              entries.forEach(
+                function (entry) {
+
+                  if (
+                    !entry.isIntersecting
+                  ) {
+                    return;
+                  }
+
+
+                  navigationLinks.forEach(
+                    function (link) {
+
+                      link.style.color =
+                        "";
+
+
+                      if (
+                        link.getAttribute(
+                          "href"
+                        ) ===
+                        "#" +
+                        entry.target.id
+                      ) {
+
+                        link.style.color =
+                          "var(--primary)";
+
+                      }
+
+                    }
+                  );
+
+                }
+              );
+
+            },
+
+            {
+              rootMargin:
+                "-25% 0px -65% 0px"
+            }
+
+          );
+
+
+        sections.forEach(
+          function (section) {
+
+            observer.observe(
+              section
+            );
+
+          }
+        );
+
+
+
+        /* ==============================
+           SCROLL REVEAL
+        ============================== */
+
+        const revealItems =
+          document.querySelectorAll(
+            ".fact-card, .academic-card, .life-card, .community-card, .contact-card"
+          );
+
+
+        revealItems.forEach(
+          function (item) {
+
+            item.style.opacity =
+              "0";
+
+
+            item.style.transform =
+              "translateY(12px)";
+
+
+            item.style.transition =
+              "opacity .55s ease, transform .55s ease";
+
+          }
+        );
+
+
+        const revealObserver =
+          new IntersectionObserver(
+
+            function (entries) {
+
+              entries.forEach(
+                function (entry) {
+
+                  if (
+                    !entry.isIntersecting
+                  ) {
+                    return;
+                  }
+
+
+                  entry.target.style.opacity =
+                    "1";
+
+
+                  entry.target.style.transform =
+                    "translateY(0)";
+
+
+                  revealObserver.unobserve(
+                    entry.target
+                  );
+
+                }
+              );
+
+            },
+
+            {
+              threshold: .08
+            }
+
+          );
+
+
+        revealItems.forEach(
+          function (item) {
+
+            revealObserver.observe(
+              item
+            );
+
+          }
+        );
+
+
+      }
+    );
+
+  </script>
+
+
+</body>
+
+</html>
